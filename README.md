@@ -4,7 +4,7 @@ A full-stack personal data aggregation platform where users can connect their ac
 
 ![Data Vault](https://img.shields.io/badge/Privacy-First-green) ![React](https://img.shields.io/badge/React-19.0-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110-teal) ![MongoDB](https://img.shields.io/badge/MongoDB-4.5-green)
 
-## 🎯 Features
+## Features
 
 ### Core Functionality
 - **JWT Authentication**: Secure user signup and login with bcrypt password hashing
@@ -16,7 +16,7 @@ A full-stack personal data aggregation platform where users can connect their ac
 - **Full Data Control**: One-click provider disconnect or account deletion
 - **Audit Logging**: Complete transparency of all operations
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+, Node.js 18+, MongoDB
@@ -48,7 +48,7 @@ sudo supervisorctl restart all
 
 Add redirect URI: `https://unified-vault.preview.emergentagent.com/oauth/callback/{provider}`
 
-## 📡 API Endpoints
+## API Endpoints
 
 - `POST /api/auth/signup` - Create account
 - `POST /api/auth/login` - Login
@@ -59,7 +59,7 @@ Add redirect URI: `https://unified-vault.preview.emergentagent.com/oauth/callbac
 - `POST /api/export` - Generate export
 - `DELETE /api/account` - Delete account
 
-## 🗄️ Database Schema
+## Database Schema
 
 **records** (Unified Schema):
 ```json
@@ -72,7 +72,7 @@ Add redirect URI: `https://unified-vault.preview.emergentagent.com/oauth/callbac
 }
 ```
 
-## 🔐 Security
+## Security
 
 - Encrypted OAuth tokens (Fernet/AES-256)
 - JWT sessions (30-day expiration)
@@ -80,7 +80,7 @@ Add redirect URI: `https://unified-vault.preview.emergentagent.com/oauth/callbac
 - No tokens in logs
 - Audit trail for all actions
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Test auth
@@ -93,7 +93,7 @@ curl -X POST ${BACKEND_URL}/api/sync/spotify \
   -H "Authorization: Bearer TOKEN"
 ```
 
-## 🔄 Adding New Connectors
+## Adding New Connectors
 
 1. Add OAuth config to `.env`
 2. Add authorization endpoint
@@ -102,14 +102,14 @@ curl -X POST ${BACKEND_URL}/api/sync/spotify \
 
 See README for detailed steps.
 
-## 📊 Export Format
+## Export Format
 
 - JSON + CSV files per dataset
 - Schema metadata included
 - Zipped and stored in GridFS
 - 24-hour signed download links
 
-## 🎓 Technical Stack
+## Tech Stack
 
 - **Backend**: FastAPI, Motor (async MongoDB), Fernet encryption
 - **Frontend**: React 19, React Router, Tailwind CSS, Lucide icons
@@ -117,7 +117,3 @@ See README for detailed steps.
 - **AI**: OpenAI GPT-4o-mini integration
 - **Storage**: GridFS for export files
 - **Auth**: JWT + OAuth2 + encrypted token storage
-
----
-
-**Built with focus on privacy, security, and user control** 🔒
