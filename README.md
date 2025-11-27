@@ -4,6 +4,10 @@ A full-stack personal data aggregation platform where users can connect their ac
 
 ![Data Vault](https://img.shields.io/badge/Privacy-First-green) ![React](https://img.shields.io/badge/React-19.0-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110-teal) ![MongoDB](https://img.shields.io/badge/MongoDB-4.5-green)
 
+
+https://github.com/user-attachments/assets/b1f04878-2901-44e5-9a89-c2d316474179
+
+
 ## Features
 
 ### Core Functionality
